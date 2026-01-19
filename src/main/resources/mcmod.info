@@ -1,0 +1,19 @@
+[
+{
+  "modid": "rhgmodpackextra",
+  "name": "RHG Modpack Extra",
+  "description": "This is a mod created by me, rhghunter.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": [
+    "RHGhunter",
+    "RHGhunterYT"
+  ],
+  "credits": "Myself, RHGhunter",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
