@@ -1,0 +1,30 @@
+{
+    "name": "Forge 1.7.10 Dev",
+    "image": "mcr.microsoft.com/devcontainers/java:8",
+    "features": {
+        "ghcr.io/devcontainers/features/java:1": {
+            "version": "8",
+            "installGradle": true,
+            "gradleVersion": "4.4.1" 
+        }
+    },
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "java.configuration.runtimes": [
+                    {
+                        "name": "JavaSE-1.8",
+                        "path": "/usr/local/sdkman/candidates/java/8.0.472-tem",
+                        "default": true
+                    }
+                ],
+                "java.import.gradle.java.home": "/usr/local/sdkman/candidates/java/8.0.472-tem"
+            },
+            "extensions": [
+                "vscjava.vscode-java-pack",
+                "vscjava.vscode-gradle"
+            ]
+        }
+    },
+    "postCreateCommand": "chmod +x gradlew"
+}
