@@ -14,6 +14,7 @@ buildscript {
             url = "https://repo.spongepowered.org/maven"
         }
     }
+
     dependencies {
         classpath ('com.anatawa12.forge:ForgeGradle:1.2-1.1.+') {
             changing = true
@@ -53,6 +54,7 @@ dependencies {
     // for more info...
     // http://www.gradle.org/docs/current/userguide/artifact_dependencies_tutorial.html
     // http://www.gradle.org/docs/current/userguide/dependency_management.html
+    compile fileTree(dir: 'libs', include: '*.jar')
 }
 
 processResources {
